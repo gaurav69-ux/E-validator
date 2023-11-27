@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    background-color: black;
+    color: white;
+    padding: 19px 12px;
+
+}
+.logo img{
+    width: 15px;
+    filter: invert(1);
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    padding: 0 13px;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+ul >li>a:hover {
+     color:rgb(149, 146, 168) ;
+}
+
+main{
+/* min-height -- mtlb minimum itni height to rehnihi chahiye isse kam nhi hogi isse jada ho skti hai. */
+    min-height: 100vh;  
+    padding: 2px;
+}
+.container{
+ /*max-width -- mtlb maximum iski width kitni ho skti hai or isse jada nhi.  */
+    max-width: 80vw;
+    margin: auto;
+    padding: 9px 15px;
+}
+.container h1{
+    padding: 12px 0;
+}
+input[type='text']{
+    min-width: 23vw;
+    padding: 1px;
+    border: 2px solid black;
+    font-size: 15px;
+}
+.btn{
+    background-color: black;
+    color: white;
+    padding: 9px 12px;
+    border: 1px solid grey;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#resultCont div::first-letter{
+    text-transform: uppercase;
+}
+footer{
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        font-size: 12px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        padding: 6px 0;
+    }
+    .logo img{
+        width: 15px;
+        filter: invert(1);
+    }
+    .logo span{
+        font-size: 20px;
+    }
+}
